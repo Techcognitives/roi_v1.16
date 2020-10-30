@@ -1,0 +1,1 @@
+https://roidev-7c586.firebaseio.com/users.json?orderBy=%22email%22&equalTo=%22kol@cognivue.com%22&print=pretty

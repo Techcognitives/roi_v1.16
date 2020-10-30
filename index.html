@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="description" content="Cognivue is the first computerized cognitive test cleared by the FDA and was intuitively designed to eliminate testing variables. It identifies changes in brain function that could indicate an impairment using adaptive psychophysics. ">
+  <title>ROI Calculator - Cash Pay Model</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700" rel='stylesheet'>
+  <link rel="stylesheet" href="css/style.css">
+
+
+
+</head>
+
+<body>
+  
+  <!-- <h1 class="trigger" style="color: #288FDB;text-align: center; cursor: pointer;">Audiology</h1>  
+  <h4 class="trigger" style="color: #000000;text-align: center; cursor: pointer;">ROI Calculator</h4>   -->
+
+
+  <div class="modal show-modal login" >
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <div class="dialog-bg">
+          <p class="dialog-title">Login with your credentials</p>
+          <div class="dialog-border">
+            <input type="text"  id="email_address" type="email" placeholder="Email address" >
+
+          </div>
+          <div class="dialog-border">
+            <input  id="password" type="password" placeholder="Password" >
+          </div>
+         
+        <p class="dialog-button" id="login"><span>Login</span></p>
+        <p class="forgot-password">Forgot Password?</p>
+        <p class="change-password">Change Password?</p>
+        <div class="clear"></div>
+
+          
+        </div>
+    </div>
+</div>
+
+  <div class="modal practiceName">
+      <div class="modal-content">
+          <span class="close-button">&times;</span>
+          <div class="dialog-bg">
+            <p class="dialog-title">Enter Practice Information</p>
+            <div class="dialog-border">
+              <input type="text"  id="practice_name" placeholder="Practice Name*" >
+
+            </div>
+            <!-- <div class="dialog-border dialog-left">
+              <select id="states" name="states">
+                <option class="select-option" value="" disabled selected>State</option>
+                <option value="AL - Alabama">AL - Alabama </option>
+<option value="AK - Alaska">AK - Alaska </option>
+<option value="AZ - Arizona">AZ - Arizona</option>
+<option value="AR - Arkansas">AR - Arkansas</option>
+<option value="CA - California">CA - California</option>
+<option value="CO - Colorado">CO - Colorado</option>
+<option value="CT - Connecticut">CT - Connecticut</option>
+<option value="DE - Delaware">DE - Delaware</option>
+<option value="FL - Florida">FL - Florida</option>
+<option value="GA-Georgia">GA-Georgia</option>
+<option value="HI - Hawaii">HI - Hawaii</option>
+<option value="ID - Idaho">ID - Idaho</option>
+<option value="IL - Illinois">IL - Illinois</option>
+<option value="IN - Indiana">IN - Indiana</option>
+<option value="IA - Iowa">IA - Iowa</option>
+<option value="KS - Kansas">KS - Kansas</option>
+<option value="KY - Kentucky">KY - Kentucky</option>
+<option value="LA-Louisiana"> LA-Louisiana</option>
+<option value="ME - Maine">ME - Maine</option>
+<option value="MD - Maryland">MD - Maryland</option>
+<option value="MA - Massachusetts">MA - Massachusetts</option>
+<option value="MI - Michigan">MI - Michigan</option>
+<option value="MN - Minnesota">MN - Minnesota</option>
+<option value="MS - Mississippi">MS - Mississippi</option>
+<option value="MO - Missouri">MO - Missouri</option>
+<option value="MT - Montana">MT - Montana</option>
+<option value="NE - Nebraska">NE - Nebraska</option>
+<option value="NV - Nevada">NV - Nevada</option>
+<option value="NH - New Hampshire">NH - New Hampshire</option>
+<option value="NJ - New Jersey">NJ - New Jersey</option>
+<option value="NM - New Mexico">NM - New Mexico</option>
+<option value="NY - New York">NY - New York</option>
+<option value="NC - North Carolina">NC - North Carolina</option>
+<option value="ND - North Dakota">ND - North Dakota</option>
+<option value="OH - Ohio">OH - Ohio</option>
+<option value="OK - Oklahoma">OK - Oklahoma</option>
+<option value="OR - Oregon">OR - Oregon</option>
+<option value="PA - Pennsylvania">PA - Pennsylvania</option>
+<option value="RI - Rhode Island">RI - Rhode Island</option>
+<option value="SC - South Carolina">SC - South Carolina</option>
+<option value="SD - South Dakota">SD - South Dakota</option>
+<option value="TN - Tennessee">TN - Tennessee</option>
+<option value="TX - Texas">TX - Texas</option>
+<option value="UT - Utah">UT - Utah</option>
+<option value="VT - Vermont">VT - Vermont</option>
+<option value="VA - Virginia">VA - Virginia</option>
+<option value="WA - Washington">WA - Washington</option>
+<option value="WV - West Virginia">WV - West Virginia</option>
+<option value="WI - Wisconsin">WI - Wisconsin</option>
+<option value="WY - Wyoming">WY - Wyoming</option>
+<option value="DC - District of Columbia">DC - District of Columbia</option>
+
+              </select>
+
+            </div>
+            <div class="dialog-border dialog-right">
+              <input type="number" min="1" max="999" oninput="validity.valid||(value='');" id="number_of_location" placeholder="Number of Locations" >
+
+            </div>
+            <div class="clear"></div>
+
+            <div class="dialog-border dialog-left">
+              <input type="text"  id="email_id" placeholder="Email" >
+            </div>
+            <div class="dialog-border dialog-right">
+              <input type="text"  id="phone" placeholder="Phone" >
+
+            </div>
+            <div class="clear"></div>
+            <div class="dialog-border dialog-left">
+              <input type="text" id="name_id" placeholder="Name" >
+            </div>
+            <div class="dialog-border dialog-right">
+              <input type="text" id="code_id" placeholder="Code" >
+
+            </div>
+            <div class="clear"></div> -->
+                       <p class="dialog-button-right" id="submitt"><span>Submit</span></p>
+            
+          </div>
+      </div>
+  </div>
+  <script src='js/jquery.min.js'></script>
+
+<script src="js/script.js"></script>
+<script>
+  var login = document.querySelector(".login");
+
+    //var trigger = document.querySelector(".trigger");
+    var closeButton = document.querySelector(".close-button");
+
+    function toggleModal() {
+      login.classList.toggle("show-modal");
+    }
+
+    function windowOnClick(event) {
+        if (event.target === login) {
+            toggleModal();
+        }
+    }
+
+    //trigger.addEventListener("click", toggleModal);
+    closeButton.addEventListener("click", toggleModal);
+    window.addEventListener("click", windowOnClick);
+</script>
+
+</body>
+
+</html>

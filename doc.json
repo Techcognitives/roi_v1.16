@@ -1,0 +1,13 @@
+{"users":{
+    "user1":{
+        "email":"kol@cognivue.com", 
+        "isAdmin":true
+    },
+    "user2":{
+        "email":"sales@cognivue.com", 
+        "isAdmin":false
+    }
+}
+}
+
+
